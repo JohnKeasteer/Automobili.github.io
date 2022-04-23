@@ -1,0 +1,56 @@
+Body
+{font-weight:bold;
+    font-size:24px;
+}
+h1 {
+	font-weight:bold;
+    font-size:50px;
+	margin-left:600px;
+}
+a {
+
+color:#ffffff;
+
+text-decoration:underline ;
+
+}
+.press {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 640px;
+  height: 360px;
+  display: flex;
+}
+.press-item {
+  list-style: none;
+  width: 25%;
+  background: url(Jaguar-XS.jpg);
+  background-size: cover;
+  height: 100%;
+  transition: 0.5s;
+}
+.press:hover .press-item:nth-child(odd) {
+  transform: skewY(15deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0, .5);
+}
+.press:hover .press-item:nth-child(even) {
+  transform: skewY(-15deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0, .5);
+}
+.press .press-item:nth-child(1) {
+  background-position: 0;
+}
+.press .press-item:nth-child(2) {
+  background-position: -160px;
+}
+.press .press-item:nth-child(3) {
+  background-position: -320px;
+}
+.press .press-item:nth-child(4) {
+  background-position: -480px;
+}
+     
